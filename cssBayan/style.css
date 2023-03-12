@@ -1,9 +1,18 @@
+@media (max-width: 4000px) {
+    html {
+       font-size: 15px;
+    }
+}
+
 .input {
     visibility: hidden;
     opacity:0;
     width:0;
     height: 0;
+
+    transition: all 1s;
 }
+
 
 html {
     font-size: 10px;
@@ -12,33 +21,38 @@ html {
 
 .main-heading {
     font-size: 4rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 
 }
 
 .label-container {
+
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
 
-    border-top:rgba(255, 255, 255, 0.2) 2px solid;
+    border-top:rgba(255, 255, 255, 0.2) 0.2rem solid;
 }
 
 .line1 {
-    transform: rotate(45deg) translateY(4px) translateX(5px);
-    width:15px;
-    height: 15px;
-    border-bottom:  rgba(255, 255, 255, 0.74) 2px solid;
+    transform: rotate(45deg) translateY(0.25rem) translateX(0.25rem);
+    width:1rem;
+    height: 1rem;
+    border-bottom:  rgba(255, 255, 255, 0.74) 0.15rem solid;
 }
 
 .line2 {
     transform: rotate(135deg);
-    width:15px;
-    height: 15px;
-    border-bottom:  rgba(255, 255, 255, 0.74) 2px solid;
+    width:1rem;
+    height: 1rem;
+    border-bottom:  rgba(255, 255, 255, 0.74) 0.15rem solid;
 }
 
+.plus {
+    transform: rotate(45deg);
+}
 body {
-    background-color: blueviolet;
+    background-color: #9364bf;
 }
 
 .body-wrapper {
@@ -59,48 +73,48 @@ margin: 0 auto;
 .meme-container1 {
     cursor: pointer;
 
-    margin: 0px auto 10px;
+    margin: 0px auto 1rem;
 
     background-image: url('./assets/images/1.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 202px;
+    height: 50rem;
+    width: 20rem;
 }
 
 .meme-container2 {
-    margin: 0px auto 10px;
+    margin: 0px auto 1rem;
     cursor: pointer;
 
     background-image: url('./assets/images/2.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width:242px;
-    height: 175px;
+    width:24rem;
+    height: 17.5rem;
 }
 
 
 .meme-container3 {
-    margin: 0px auto 10px;
+    margin: 0px auto 1rem;
     cursor: pointer;
 
     background-image: url('./assets/images/3.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width:270px;
-    height: 500px;
+    width:27rem;
+    height: 50rem;
 }
 
 .meme-container4 {
-    margin: 0px auto 10px;
+    margin: 0px auto 1rem;
 
     cursor: pointer;
 
     background-image: url('./assets/images/4.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width:241px;
-    height: 500px;
+    width:24rem;
+    height: 50rem;
 }
 
 .container{
@@ -108,6 +122,8 @@ margin: 0 auto;
     overflow: hidden;
     height: 0px;
     width:70vw;
+
+    cursor: pointer;
 
     transition: all 1s;
 
@@ -118,7 +134,7 @@ margin: 0 auto;
 
 .input:hover + .container {
     visibility: visible;
-    height: 180px;
+    height: 18rem;
  } 
 
 .meme-container1:active {
@@ -141,14 +157,55 @@ margin: 0 auto;
 .input:checked + .container {
    visibility: visible;
    width: 70vw;
-   height: 180px;
+   height: 18rem;
 }
 
 .heading-container {
-    font-size: 3rem;
+    font-size: 2rem;
 line-height: 4rem;
+font-weight: 900;
+
+
 display: flex;
 cursor: pointer;
+}
+
+.input:checked ~ .plus {
+    transform: translate(45deg);
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 9px;
+     }
+    .input:hover + .container {
+        visibility: hidden;
+        height: 0;
+     } 
+
+}
+
+@media (max-width:400px) {
+    html {
+        font-size: 8px;
+    }
+    .meme-container1 {
+        width: 23rem;
+    }
+
+    .meme-container2 {
+        width: 23rem;
+    }
+
+    .meme-container3 {
+        width: 23rem;
+    }
+
+    .meme-container4 {
+        width: 23rem;
+    }
+
 }
 
 
