@@ -19,6 +19,8 @@ html {
 .label-container {
     display: flex;
     justify-content: space-between;
+
+    border-top:rgba(255, 255, 255, 0.2) 2px solid;
 }
 
 .line1 {
@@ -40,7 +42,7 @@ body {
 }
 
 .body-wrapper {
-    max-width: 60vw;
+    max-width: 70vw;
 max-height: 100vh;
 margin: 0 auto;
 }
@@ -57,7 +59,7 @@ margin: 0 auto;
 .meme-container1 {
     cursor: pointer;
 
-    margin: 0 auto;
+    margin: 0px auto 10px;
 
     background-image: url('./assets/images/1.jpg');
     background-size: contain;
@@ -67,7 +69,7 @@ margin: 0 auto;
 }
 
 .meme-container2 {
-    margin: 0 auto;
+    margin: 0px auto 10px;
     cursor: pointer;
 
     background-image: url('./assets/images/2.jpg');
@@ -79,7 +81,7 @@ margin: 0 auto;
 
 
 .meme-container3 {
-    margin: 0 auto;
+    margin: 0px auto 10px;
     cursor: pointer;
 
     background-image: url('./assets/images/3.jpg');
@@ -90,7 +92,7 @@ margin: 0 auto;
 }
 
 .meme-container4 {
-    margin: 0 auto;
+    margin: 0px auto 10px;
 
     cursor: pointer;
 
@@ -105,7 +107,7 @@ margin: 0 auto;
     visibility: hidden;
     overflow: hidden;
     height: 0px;
-    width:60vw;
+    width:70vw;
 
     transition: all 1s;
 
@@ -138,7 +140,7 @@ margin: 0 auto;
 
 .input:checked + .container {
    visibility: visible;
-   width: 60vw;
+   width: 70vw;
    height: 180px;
 }
 
@@ -148,7 +150,6 @@ line-height: 4rem;
 display: flex;
 cursor: pointer;
 }
-
 
 
 
