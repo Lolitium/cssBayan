@@ -1,0 +1,131 @@
+.input {
+    visibility: hidden;
+    opacity:0;
+    width:0;
+    height: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-heading {
+    font-size: 3rem;
+
+}
+
+
+body {
+    max-width: 60vw;
+    max-height: 100vh;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 1rem;
+    display: inline-block;
+
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    color: white;
+}
+
+
+
+.meme-container1 {
+
+    margin: 0 auto;
+
+    background-image: url('./assets/images/1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100px;
+    height: 200px;
+}
+
+
+
+.meme-container2 {
+    margin: 0 auto;
+
+    background-image: url('./assets/images/2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100px;
+    height: 200px;
+}
+
+.meme-container3 {
+    margin: 0 auto;
+
+    background-image: url('./assets/images/3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100px;
+    height: 200px;
+}
+
+.meme-container4 {
+    margin: 0 auto;
+
+    background-image: url('./assets/images/4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100px;
+    height: 200px;
+}
+
+.container {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0px;
+    width:0px;
+
+    transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input:hover + .container {
+    visibility: visible;
+    width: 60vw;
+    height: 100px;
+ }
+
+
+
+.input:checked + .container {
+   visibility: visible;
+   width: 60vw;
+   height: 100px;
+}
+
+.heading-container {font-size: 2rem;}
+
+.heading-container {
+    display: flex;
+    cursor: pointer;
+
+}
+
+.container:checked {
+    height: 150px;
+}
+
+.input:hover + .container{
+    visibility: visible;
+}
+
+.meme-container:checked {
+    height: 150px;
+}
+
